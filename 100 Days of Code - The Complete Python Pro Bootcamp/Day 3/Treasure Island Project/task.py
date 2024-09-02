@@ -1,4 +1,4 @@
-print('''
+print(r'''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -22,3 +22,24 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+cross_road = input("Where do you want to go? left or right?\n").lower()
+print(cross_road)
+if cross_road == "left":
+    print("You can continue!")
+    swim = input("Do you want to swim or wait?\n").lower()
+    if swim == "wait":
+        print("You can continue!")
+        door = input("Which door you would choose? red, blue or yellow?\n").lower()
+        if door == "red":
+            print("Burned by fire. Game Over!")
+        elif door == "blue":
+            print("Eaten by beasts. Game Over!")
+        elif door == "yellow":
+            print("You Win!")
+        else:
+            print("Game Over!")
+    else:
+        print("Attacked by trout. Game Over!")
+else:
+    print("Fall into a hole. Game Over!")
+
