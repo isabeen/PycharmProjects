@@ -8,16 +8,19 @@ if size == "S":
     bill = 15
     if pepperoni == "Y":
         bill += 2
+
 elif size == "M":
     bill = 20
     if pepperoni == "Y":
         bill += 3
-else:
-    bill = 25
-    if pepperoni == "Y":
-        bill += 3
 
-if extra_cheese == "y":
+elif size == "L":
+        bill = 25
+        if pepperoni == "Y":
+            bill += 3
+
+
+if extra_cheese == "Y":
     bill += 1
 
-print(f"Your final bill is: ${bill}")
+print(f"Your final bill is: ${bill}.")
